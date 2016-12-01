@@ -245,8 +245,8 @@ describe('Squire RTE', function () {
         });
 
         it('includes color value in the path', function () {
-            editor.insertHTML('<div class="colour" style="color: rgb(255, 0, 0)">Text</div>');
-            expect(editor.getPath(), 'to be', 'DIV.colour[color=rgb(255,0,0)]');
+            editor.insertHTML('<div class="color" style="color: rgb(255, 0, 0)">Text</div>');
+            expect(editor.getPath(), 'to be', 'DIV.color[color=rgb(255,0,0)]');
         });
 
         it('includes font family value in the path', function () {
