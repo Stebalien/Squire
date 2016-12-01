@@ -1929,6 +1929,23 @@ proto.setFontSize = function ( size ) {
     return this.focus();
 };
 
+proto.setFontProperty = function ( name, value ) {
+    switch ( name ) {
+    case "highlight":
+        this.setHighlightColour( value );
+        break;
+    case "color":
+        this.setTextColour( value );
+        break;
+    case "font":
+        this.setFontFace( value );
+        break;
+    case "size":
+        this.setFontSize( value );
+        break;
+    }
+};
+
 proto.setTextColour = function ( colour ) {
     this.changeFormat( colour ? {
         tag: 'SPAN',
