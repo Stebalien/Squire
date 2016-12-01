@@ -205,7 +205,7 @@ Returns the path through the DOM tree from the `<body>` element to the current c
 
 ### getFontInfo
 
-Returns an object containing the active font family, size, colour and background colour for the the current cursor position, if any are set. The property names are respectively `family`, `size`, `color` and `backgroundColor`. It looks at style attributes to detect this, so will not detect `<FONT>` tags or non-inline styles. If a selection across multiple elements has been made, it will return an empty object.
+Returns an object containing the active font family, size, colour and background colour for the the current cursor position, if any are set. The property names are respectively `font`, `size`, `color` and `highlight`. It looks at style attributes to detect this, so will not detect `<FONT>` tags or non-inline styles. If a selection across multiple elements has been made, it will return an empty object.
 
 ### getCursorPosition
 

@@ -921,8 +921,8 @@ proto.hasFormat = function ( tag, attributes, range ) {
 proto.getFontInfo = function ( range ) {
     var fontInfo = {
         color: undefined,
-        backgroundColor: undefined,
-        family: undefined,
+        highlight: undefined,
+        font: undefined,
         size: undefined
     };
     var seenAttributes = 0;
@@ -945,11 +945,11 @@ proto.getFontInfo = function ( range ) {
                 }
                 if ( !fontInfo.backgroundColor &&
                         ( attr = style.backgroundColor ) ) {
-                    fontInfo.backgroundColor = attr;
+                    fontInfo.highlight = attr;
                     seenAttributes += 1;
                 }
                 if ( !fontInfo.family && ( attr = style.fontFamily ) ) {
-                    fontInfo.family = attr;
+                    fontInfo.font = attr;
                     seenAttributes += 1;
                 }
                 if ( !fontInfo.size && ( attr = style.fontSize ) ) {
